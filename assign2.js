@@ -1,22 +1,26 @@
-let rightNumber = (Math.random() * 10) + 1;
+let x;
 
-function checkGuess () {
-    let guess = (document.getElementById("userInput").value);
+let y = user_Input;
+
+let userGuess = document.getElementById("userGuess").value;
+
+
+function checkGuess() {
+
+    while (x = (Math.floor(Math.random) * 10)) {
+
+	
+	if (y !==x) {
+	alert("That is not the correct number. Please try again!")
+        console.log("y");
 
 }
 
-    while (guess !== rightNumber) {
-	displayText( 'Sorry! That is not the correct number! Try again!');
+	   else {
+           alert("You guessed the correct number! Good job!")
+           console.log("correct");
+	   break;
 
-    }
-
-	if (guess == rightNumber) {
-        displayText( 'That is the correct number! Great job!');
-
-    }
-
-function displayText (message) {
-    let resultElement = document.getElementById("result");
-    resultElement.textContent = message;
 }
-
+}
+}
