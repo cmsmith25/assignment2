@@ -1,32 +1,20 @@
-
-
 function checkGuess() {
 
-    const randomNumber = (Math.floor(Math.random) * 10) + 1;
-    let guess;
-    
+let randomNumber = Math.floor(Math.random() * 10);
+randomNumber+=1;
 
-	
-	while (guess !== randomNumber) {
-        guess = parseInt(prompt("Guess a number between 1 and 10:"), 10);
-        
-        if (guess === randomNumber){
-            alert("You got it!");
-        
+let userGuess = parseInt(prompt("Guess the random number from 1 to 10:"));
 
-        } else if (guess < randomNumber) {
-            alert("That number is too low. Please try again.");
-        
-    
-        } else if (guess > randomNumber) {
-            alert("That number is too high. Please try again.");
-        
+while(userGuess !== randomNumber) {
+    userGuess = parseInt(prompt("That is not the right number. Please guess a number from 1 to 10: "));
+    console.log(randomNumber)
+}
 
-        } else {
-            alert("That is not a valid input. Please enter a number between 1 and 10.");
-        }
+if userGuess === randomNumber) {
+    console.log("You guessed it! The random number was " + randomNumber + ". Great job!");
 
-    }
-    }
-        alert("The random number was" + randomNumber + ". Great job!");
+}
+}
+
+checkGuess();
 
