@@ -10,7 +10,7 @@ while(userGuess !== randomNumber) {
     console.log(randomNumber)
 }
 
-if userGuess === randomNumber) {
+if (userGuess === randomNumber) {
     console.log("You guessed it! The random number was " + randomNumber + ". Great job!");
 
 }
